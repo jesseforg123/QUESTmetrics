@@ -1,0 +1,89 @@
+@import './scss/Home';
+@import './scss/Class';
+@import './scss/Classes';
+@import './scss/Group';
+@import './scss/Main';
+@import './scss/Navbar';
+@import './scss/Settings';
+@import './scss/SurveyInstructor';
+@import './scss/SurveyStudent';
+@import './scss/About';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$bg: #f3f5f7;
+
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	background: $bg;
+	color: #222;
+	font-weight: 400;
+}
+
+.navbar-nav {
+	&:hover {
+		background: $bg;
+		box-shadow: 2px 0px 2.5px rgba(48, 60, 75, 0.3);
+	}
+}
+
+.Collapsible {
+	margin-bottom: 3rem;
+	margin-left: 1rem;
+	cursor: pointer;
+	display: inline;
+	.Collapsible__trigger {
+		padding: 1rem 2rem;
+		background: $bg;
+		border-radius: 2rem;
+		box-shadow: 1px 1px 2px #555;
+		font-size: 1.15rem;
+		font-weight: 400;
+	}
+}
+
+h1 {
+	text-decoration: none;
+	margin: 0rem 0 0.5rem 0rem;
+	font-weight: 500;
+	font-size: 30rem;
+	position: fixed;
+	bottom: -30%;
+	z-index: -1;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	color: rgba(0, 0, 0, 0.15);
+	letter-spacing: -1.5rem;
+	animation: h1-anim 1.5s ease forwards;
+}
+
+@keyframes h1-anim {
+	from {
+		opacity: 0;
+		right: -8%;
+	}
+	to {
+		opacity: 1;
+		right: -5%;
+	}
+}
+
+h2 {
+	margin: 1rem 0 2rem 1rem;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+h3 {
+	margin: 1rem 0 1rem 2rem;
+	color: red;
+	font-weight: 500;
+}

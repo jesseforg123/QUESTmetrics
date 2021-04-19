@@ -1,0 +1,165 @@
+.survey-instructor {
+	height: 95vh;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	// grid-auto-columns: 2fr 1fr;
+	align-items: start;
+}
+
+.warning {
+	color: red;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.warningClass {
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+}
+
+.selectclass {
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 47.5rem;
+	margin-left: 4rem;
+	div {
+		display: flex;
+		align-items: center;
+		font-size: 1.5rem;
+		input {
+			display: block;
+			margin-right: 1rem;
+			transform: scale(2);
+		}
+	}
+}
+
+.survey-instructor > p {
+	animation: settings-info 0.8s ease;
+
+	width: 40rem;
+	margin-top: 6.5rem;
+	margin-right: 4rem;
+	background: #e7ebef;
+	height: min-content;
+	padding: 2rem 3rem;
+	border-radius: 2rem;
+	line-height: 2.7rem;
+	font-size: 1.5rem;
+	.subtext {
+		font-size: 1.04rem;
+		opacity: 0.7;
+	}
+	.please {
+		font-size: 1.15rem;
+		color: red;
+	}
+}
+
+@keyframes settings-info {
+	from {
+		opacity: 0;
+		margin-right: 0rem;
+	}
+	to {
+		opacity: 1;
+		margin-right: 4rem;
+	}
+}
+
+.container {
+	width: 57rem;
+	padding: 5rem 2rem;
+	border-radius: 2rem;
+	margin-bottom: 2rem;
+}
+
+.remove-button {
+	border: none;
+	color: #29333d;
+	text-align: center;
+	text-decoration: none;
+	padding: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 6rem;
+	margin-left: 1rem;
+	margin-top: -6rem;
+	cursor: pointer;
+	font-weight: 300;
+}
+
+.question-input {
+	font-size: 1.5rem;
+	text-align: start;
+	margin-left: 1rem;
+	font-family: inherit;
+	background: #e6eaef;
+	border: none;
+	padding: 1rem;
+	flex: 1;
+	border-radius: 0.3rem;
+	&:placeholder {
+		font-size: 0.5rem;
+	}
+	&:-webkit-input-placeholder {
+		font-size: 0.5rem;
+	}
+}
+
+.question-number {
+	font-size: 2rem;
+	width: 2rem;
+}
+
+.question {
+	display: flex;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+.add-button,
+.add-button-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #29333d;
+	text-align: center;
+	text-decoration: none;
+	font-size: 5rem;
+	font-weight: 500;
+	margin: auto;
+	margin-top: 2rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 60%;
+	cursor: pointer;
+}
+
+.add-button-text {
+	font-size: 2rem;
+	font-weight: 400;
+	width: 25rem;
+	background: black;
+	border-radius: 1rem;
+	padding: 2rem 2rem;
+	color: #f3f5f7;
+	background: #181f25;
+	margin-left: 0 auto;
+}
+
+.save-button {
+	background: #181f25 !important;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 1rem 1rem;
+	font-size: 2rem;
+	margin: auto;
+	margin-top: 5rem;
+	cursor: pointer;
+	transition: background 0.5s ease;
+	border-radius: 0.3rem;
+}

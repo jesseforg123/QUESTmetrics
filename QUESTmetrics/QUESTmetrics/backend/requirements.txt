@@ -1,0 +1,10 @@
+flask
+flask-restful
+flask-sqlalchemy
+flask-cors
+flask-jwt-extended
+python-dotenv
+marshmallow-sqlalchemy
+datetime
+names
+sklearn

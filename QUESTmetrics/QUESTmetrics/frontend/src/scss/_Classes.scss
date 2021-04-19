@@ -1,0 +1,37 @@
+main {
+	box-sizing: border-box;
+}
+
+hr {
+	margin: 1rem 0rem;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.classes {
+	display: flex;
+	margin-top: 2rem;
+	.class {
+		margin: 0.5rem 1rem 1rem 1rem;
+		border-radius: 2rem;
+		// border: 1px black solid;
+		transition: background 0.5s ease, color 0.5s ease;
+		padding: 1rem 2rem;
+		font-size: 1.3rem;
+		box-shadow: 1px 1px 2px #555;
+	}
+
+	.active-class {
+		border-radius: 60rem;
+		background: black;
+		color: white;
+		font-weight: 600;
+
+		a {
+			color: white;
+		}
+	}
+}

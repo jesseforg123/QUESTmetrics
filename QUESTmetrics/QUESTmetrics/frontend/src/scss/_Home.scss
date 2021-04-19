@@ -1,0 +1,126 @@
+$red: indianred;
+$yellow: khaki;
+$green: lightgreen;
+
+.home {
+	display: grid;
+	// grid-template-columns: 1fr 1fr 5%;
+	grid-template-columns: min-content min-content;
+	margin-top: 2rem;
+}
+
+.home > div {
+	background: #e7ebef;
+	height: min-content;
+	margin: 1rem;
+	border-radius: 2rem;
+	padding: 1rem 1rem 3rem 2rem;
+	box-shadow: 0rem 0rem 0.1rem #dae0e7;
+}
+
+.redGroups,
+.watchedGroups {
+	display: grid;
+	grid: auto / repeat(4, 1fr);
+	grid-gap: 1rem;
+	margin: 0.5rem 1rem;
+
+	.redGroup,
+	.watchedGroup {
+		display: flex;
+		padding: 1rem;
+		background: $red;
+		border-radius: 1.5rem;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		box-shadow: 1px 1px 2px #555;
+		width: 8.5rem;
+		height: 5rem;
+		font-weight: 400;
+		font-size: 0.95rem;
+
+		&:focus {
+			color: white;
+		}
+	}
+
+	.watchedGroup.red {
+		background: $red;
+	}
+
+	.watchedGroup.yellow {
+		background: $yellow;
+	}
+
+	.watchedGroup.green {
+		background: $green;
+	}
+}
+
+.hr {
+	margin: 3rem 0 2rem -1rem;
+	height: 0.5rem;
+	background: black;
+}
+
+h2.results {
+	margin-top: 0rem;
+}
+
+.survey-results {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 1rem 0 0 1rem;
+
+	h4 {
+		margin-bottom: 1rem;
+	}
+
+	.key-home {
+		border-left: 1px solid black;
+		padding-left: 1rem;
+	}
+
+	.questionobj {
+		margin-top: 2rem;
+		display: flex;
+		font-weight: bold;
+
+		.question-title {
+			flex: 1;
+		}
+
+		.questions-home {
+			flex: 3;
+		}
+	}
+
+	.questions-home {
+		display: flex;
+
+		.question-home {
+			margin-left: 1rem;
+		}
+	}
+
+	.answers-home {
+		.studentobj {
+			display: flex;
+
+			.studentname {
+				flex: 1;
+			}
+
+			.studentanswers {
+				flex: 3;
+				display: flex;
+
+				.studentanswer {
+					margin-left: 1.7rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+$red: indianred;
+$yellow: khaki;
+$green: lightgreen;
+
+.studentsInGroup {
+	margin: 2rem 0rem 3rem 0rem;
+	display: flex;
+	grid: auto / repeat(4, 1fr);
+
+	.studentInGroup {
+		color: black;
+		margin-left: 1rem;
+		padding: 1rem;
+		border: 1px solid grey;
+		font-size: 1.2rem;
+		background: #fafafa;
+	}
+}
+
+.info {
+	margin-top: 0;
+	.group-vis {
+		margin-top: 2rem;
+	}
+}
+
+.group-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+}
+.onoffswitch {
+	position: relative;
+	width: 11rem;
+	margin-top: -1rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+}
+.onoffswitch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 3rem;
+	padding: 0;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	color: white;
+	box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+	content: 'Unwatch';
+	padding-left: 14px;
+	background-color: #eeeeee;
+	color: #34a7c1;
+}
+.onoffswitch-inner:after {
+	content: 'Watch';
+	padding-right: 14px;
+	background-color: #eeeeee;
+	color: #999999;
+	text-align: right;
+}
+.onoffswitch-switch {
+	display: block;
+	width: 2rem;
+	margin: 0.5rem;
+	background: #a1a1a1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 124px;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	transition: all 0.2s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 0px;
+	background-color: #34a7c1;
+}
